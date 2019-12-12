@@ -25,7 +25,7 @@ import javax.swing.border.Border;
 
 import java.awt.color.*;
 
-public class MainFrame extends JFrame {
+public class StartFrame extends JFrame {
 	final int FRAME_WIDTH = 1250;
 	final int FRAME_HEIGHT = 700;
 	final int FIELD_WIDTH = 70;
@@ -34,7 +34,7 @@ public class MainFrame extends JFrame {
 	private TextField serchField;
 	private JButton serchBtn;
 
-	public MainFrame() {
+	public StartFrame() {
 		add(createMainPanel());
 		setTitle("Fun Fang Found NEWS");
 		setSize(FRAME_WIDTH, FRAME_HEIGHT);
@@ -171,53 +171,4 @@ public class MainFrame extends JFrame {
 
 		return panel;
 	}
-
-	// public void dooo() {
-	// try {
-	// check();
-
-	// } catch (SQLException e) {
-	// e.printStackTrace();
-	// }
-	// }
-
-	/**
-	 * public void maching() { try { match(); } catch (SQLException e) {
-	 * e.printStackTrace(); } }
-	 */
-
-	// public String getAccName() {
-	// Scanner in = new Scanner(accountField.getText());
-	// if (in.hasNext()) {
-	// in.close();
-	// return in.next();
-	// } else {
-	// System.out.println("null");
-	// return null;
-	// }
-
-	// }
 }
-
-// public void check() throws SQLException {
-// Connection conn = Connect.getConnection();
-// String query = "SELECT `Password` FROM MG04.member WHERE `Account`=?";
-// PreparedStatement accStatement = conn.prepareStatement(query);
-// accStatement.setString(1, accountField.getText());
-// ResultSet resultChoose = accStatement.executeQuery();
-// if (resultChoose.next() &&
-// resultChoose.getString("Password").equals(passwordField.getText())) {
-// HomeFrame home = new HomeFrame();
-// home.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-// home.setVisible(true);
-// dispose();
-
-// } else {
-// text.setText("Please enter correct password or accounts!" + '\n' + "Try
-// again!" + '\n');
-// accountField.setText("");
-// passwordField.setText("");
-// }
-
-// conn.close();
-// }
